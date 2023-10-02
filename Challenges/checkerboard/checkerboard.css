@@ -1,0 +1,15 @@
+body {
+    background: red;
+}
+.board {
+    display: grid;
+    grid-template: repeat(8, 100px) / repeat(8, 100px);
+}
+
+.blackBox {
+    background-color: black;
+}
+
+.whiteBox {
+    background-color: white;
+}
