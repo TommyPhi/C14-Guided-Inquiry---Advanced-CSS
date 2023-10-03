@@ -1,8 +1,9 @@
 body {
-    background: red;
+    background: blue;
 }
 .board {
     display: grid;
+    justify-content: center;
     grid-template: repeat(8, 100px) / repeat(8, 100px);
 }
 
