@@ -14,3 +14,20 @@ body {
 .whiteBox {
     background-color: white;
 }
+
+.checkerboard {
+    border-spacing: 0;
+}
+
+.checkerboard td {
+    width: 5em;
+    height: 5em;
+}
+
+.checkerboard .white {
+    background-color: white;
+}
+
+.checkerboard .black {
+    background-color: black;
+}
