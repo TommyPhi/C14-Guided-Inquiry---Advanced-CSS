@@ -1,3 +1,8 @@
+nav {
+    background-color: rgb(189, 0, 0);
+    height: 50px;
+}
+
 .product-container {
     top: 15em;
     display: grid;
@@ -20,16 +25,22 @@
     width: auto;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .card {
     text-align: left;
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 }
 
 .card:hover {
-    border: 2px rgb(32, 32, 32) solid;
-    border-radius: 20px;
+    box-shadow: 1px 1px 10px 1px black;
 }
 
 .card img {
