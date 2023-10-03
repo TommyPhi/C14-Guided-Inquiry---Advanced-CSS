@@ -1,0 +1,27 @@
+.stripes {
+    display: grid;
+    width: 50%;
+    border: 2px black solid;
+    grid-template-rows: repeat(13, 40px);
+}
+
+.whiteStripe {
+    background-color: white;
+}
+
+.redStripe {
+    background-color: darkred;
+}
+
+img {
+    position: absolute;
+    width: 23.65em;
+    height: auto;
+}
+
+img.sleepyjoe {
+    left: 80em;
+    top: 2em;
+    height: 50%;
+    width: auto;
+}
