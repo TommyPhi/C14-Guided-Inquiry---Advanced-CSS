@@ -24,11 +24,12 @@
     text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    padding: 5px;
 }
 
 .card:hover {
-    background-color: darkgray;
+    border: 2px rgb(32, 32, 32) solid;
+    border-radius: 20px;
 }
 
 .card img {
@@ -37,7 +38,8 @@
 }
 
 .product-info {
-    justify-content: space-evenly;
+    margin-top: 20px;
+    justify-content: space-between;
 }
 
 .product-info p {
