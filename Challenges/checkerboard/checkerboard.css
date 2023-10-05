@@ -1,33 +1,23 @@
-body {
-    background: blue;
-}
 .board {
     display: grid;
     justify-content: center;
     grid-template: repeat(8, 100px) / repeat(8, 100px);
 }
 
-.blackBox {
-    background-color: black;
-}
-
-.whiteBox {
-    background-color: white;
-}
-
 .checkerboard {
     border-spacing: 0;
+    border: 1px solid black;
 }
 
-.checkerboard td {
+.white {
     width: 5em;
     height: 5em;
-}
-
-.checkerboard .white {
     background-color: white;
 }
 
-.checkerboard .black {
+.black {
+    width: 5em;
+    height: 5em;
     background-color: black;
 }
+

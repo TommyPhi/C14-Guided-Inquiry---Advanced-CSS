@@ -6,24 +6,23 @@
 }
 
 td {
-    width: 75em;
+    width: 100em;
+    height: 42.3px;
+    max-height: auto;
 }
 
 .whiteStripe {
     background-color: white;
-    width: 225px;
-    height: 44.4px;
 }
 
 .redStripe {
     background-color: darkred;
-    width: 225px;
-    height: 44.4px;
 }
 
 img {
     position: absolute;
     width: 23.65em;
+    max-width: 100%;
     height: auto;
 }
 
@@ -33,3 +32,4 @@ img.sleepyjoe {
     height: 50%;
     width: auto;
 }
+
