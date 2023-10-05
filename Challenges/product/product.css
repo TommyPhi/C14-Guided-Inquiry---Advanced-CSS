@@ -1,23 +1,44 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
 nav {
     background-color: rgb(189, 0, 0);
     height: 50px;
+    width: 100%;
 }
 
 .product-container {
     top: 15em;
     display: grid;
-    position: absolute;
-    grid-template-rows: 300px 300px;
-    grid-template-columns: 200px 200px 200px 200px;
-    width: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     row-gap: 40px;
     column-gap: 35px;
     justify-content: center;
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .product-container {
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+}    
+
+@media screen and (min-width: 481px) and (max-width: 761px) {
+    .product-container {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+}    
+
 .body-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titleimg {
@@ -25,9 +46,36 @@ nav {
     width: auto;
 }
 
+.shipping {
+    color: rgb(20, 117, 41);
+    font-size: 10pt;
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: rgb(200, 37, 37);
+    border-radius: 5px;
+    border: rgb(200, 37, 37);
+}
+
+button:hover {
+    background-color: rgb(141, 26, 26);
+}
+
 a {
     text-decoration: none;
+    color: rgb(63, 62, 62);
+}
+
+.product-name:hover {
     color: black;
+}
+
+.seller-name:hover {
+    text-decoration: underline;
 }
 
 .card {
@@ -41,6 +89,7 @@ a {
 
 .card:hover {
     box-shadow: 1px 1px 10px 1px black;
+    
 }
 
 .card img {
