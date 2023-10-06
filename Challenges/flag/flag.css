@@ -5,10 +5,10 @@
     grid-template-rows: repeat(13, 40px);
 }
 
-td {
-    width: 100em;
-    height: 42.3px;
-    max-height: auto;
+table {
+    width: 50vw;
+    height: 50vh;
+    border-collapse: collapse;
 }
 
 .whiteStripe {
@@ -21,7 +21,7 @@ td {
 
 img {
     position: absolute;
-    width: 23.65em;
+    width: 18.2vw;
     max-width: 100%;
     height: auto;
 }
