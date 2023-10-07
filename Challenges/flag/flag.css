@@ -1,14 +1,8 @@
-.stripes {
-    display: grid;
-    width: 50%;
-    border: 2px black solid;
-    grid-template-rows: repeat(13, 40px);
-}
-
 table {
-    width: 50vw;
-    height: 50vh;
+    width: 900px;
+    height: 423px;
     border-collapse: collapse;
+    aspect-ratio: 1 / 1;
 }
 
 .whiteStripe {
@@ -19,17 +13,44 @@ table {
     background-color: darkred;
 }
 
+@media (max-width: 400px) {
+    table {
+        width: 800px;
+        height: 323px;
+    }
+    
+    img.stars {
+        width: 234px;
+        height: auto;
+    }
+}
+
+@media (max-width: 310px) {
+    table {
+        width: 600px;
+        height: 223px;
+    }
+    
+    img.stars {
+        width: 160px;
+        height: auto;
+    }
+}
+
+@media (max-width: 236px) {
+    table {
+        width: 400px;
+        height: 223px;
+    }
+    
+    img.stars {
+        width: 160px;
+        height: auto;
+    }
+}
+
 img {
     position: absolute;
-    width: 18.2vw;
-    max-width: 100%;
+    width: 305px;
     height: auto;
 }
-
-img.sleepyjoe {
-    left: 80em;
-    top: 2em;
-    height: 50%;
-    width: auto;
-}
-
